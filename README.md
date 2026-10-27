@@ -5,7 +5,7 @@
 ## 它做什么
 
 - `/wb-credits` —— 剩余 / 总量 / 百分比、各积分包明细与到期日、上次刷新时间
-- 底部状态栏常驻：`WorkBuddy积分 3,631/4,000 (91%) · 今日 157.1 积分 / 813 次 · 11-12 重置`
+- 底部状态栏常驻：`WorkBuddy积分 3,600/4,000 (90%) · 今日 150 积分 / 800 次 · 11-12 重置`
   低于 20% 加 `⚠`；取数失败时追加「N 分钟前更新失败」
 - `/wb-credits-login` —— 扫码登录；`/wb-credits-login <token>` 改为直接粘令牌
 - `/wb-credits-logout` —— 清除令牌与缓存
@@ -59,7 +59,6 @@
 - `POST /v2/plugin/auth/token/refresh`（401 时自动续期，凭据放 `X-Refresh-Token` 头）
 
 站点按账号域名分流：`workbuddy.cn` / `workbuddy.ai` / `codebuddy.ai` / `codebuddy.cn`。
-接口与字段取自同仓库 `workbuddy-gateway/app/credits.py` 中已经跑通的实现。
 
 ## 桌面端与 CLI 共用令牌
 

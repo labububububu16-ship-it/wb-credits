@@ -13,8 +13,7 @@
 
 ## 2. 事实基础
 
-接口与字段取自同仓库 `workbuddy-gateway/src/app/credits.py` 中**已经跑通的实现**，
-不是从客户端包里推测的：
+下面是插件实际调用的公开 HTTP 端点与字段，均经真实请求验证：
 
 | 项 | 值 |
 |---|---|
@@ -26,7 +25,6 @@
 | 请求头 | `authorization: Bearer`、`x-user-id`、`x-domain`、`x-enterprise-id`、`x-tenant-id`、`x-client-platform: web`、`origin`、`referer` |
 | 站点分流 | `workbuddy.cn` / `workbuddy.ai` / `codebuddy.ai` / `codebuddy.cn`，其余默认 `codebuddy.cn` |
 | 业务码 | `code` 为 `0` 或 `200` 都算成功 |
-| 桌面端注入给内嵌 CLI 的变量 | `CODEBUDDY_AUTH_TOKEN` |
 
 ## 3. 凭证策略
 

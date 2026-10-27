@@ -3,7 +3,6 @@
  *
  * 这里不碰 `$`：网络、时钟、账号身份都由调用方注入，`claude plugin test` 可以直接验证。
  *
- * 接口与字段沿用 workbuddy-gateway（`app/credits.py`）里已经跑通的实现：
  * 个人额度走 `/v2/billing/meter/get-user-resource`（分页 + ProductCode），
  * 企业额度走 `/v2/billing/meter/get-enterprise-user-usage`（limitNum/credit）。
  */
