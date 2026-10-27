@@ -1,0 +1,13 @@
+{
+  "name": "wb-credits-local",
+  "owner": {
+    "name": "labububububu16-ship-it"
+  },
+  "plugins": [
+    {
+      "name": "wb-credits",
+      "source": "./",
+      "description": "查看 WorkBuddy 积分余额：/wb-credits 卡片 + 状态栏常驻"
+    }
+  ]
+}

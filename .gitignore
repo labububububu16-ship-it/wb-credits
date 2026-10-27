@@ -1,0 +1,24 @@
+# 引擎生成的类型文件（每次加载都会重写，不进仓库）
+.claude-plugin/types/
+
+# 依赖与构建产物
+node_modules/
+dist/
+build/
+*.tgz
+*.tar.gz
+*.zip
+
+# 本地运行痕迹
+*.log
+.DS_Store
+.env
+.env.*
+
+# 数据库 / 会话 / cookie 一类
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*cookies*
+*session*.json
